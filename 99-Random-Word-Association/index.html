@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダム単語連想ゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ランダム単語連想ゲーム</h1>
+        <p>表示された単語から連想される言葉を入力しましょう。</p>
+        
+        <div class="word-display">
+            <p id="current-word"></p>
+        </div>
+        
+        <div class="form-group">
+            <label for="association-input">あなたの連想:</label>
+            <input type="text" id="association-input" placeholder="連想される言葉を入力">
+        </div>
+        
+        <button id="next-word-btn">次の単語</button>
+        <button id="submit-association-btn">連想を記録</button>
+        
+        <div class="results">
+            <h2>記録された連想:</h2>
+            <ul id="association-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

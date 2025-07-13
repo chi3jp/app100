@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midjourney プロンプト・ビルダー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Midjourney プロンプト・ビルダー</h1>
+        <p>フォームを埋めて、効果的なプロンプトを簡単に作成しましょう。</p>
+
+        <div class="prompt-form">
+            <div class="form-group">
+                <label for="subject">主題 (何を描くか):</label>
+                <input type="text" id="subject" placeholder="例: a beautiful cat">
+            </div>
+
+            <div class="form-group">
+                <label for="style">スタイル:</label>
+                <select id="style">
+                    <option value="">指定なし</option>
+                    <option value="photorealistic">写真風</option>
+                    <option value="anime">アニメ風</option>
+                    <option value="fantasy art">ファンタジーアート</option>
+                    <option value="pixel art">ピクセルアート</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="lighting">ライティング:</label>
+                <input type="text" id="lighting" placeholder="例: cinematic lighting">
+            </div>
+
+            <div class="form-group">
+                <label for="details">詳細・装飾:</label>
+                <input type="text" id="details" placeholder="例: wearing a tiny hat">
+            </div>
+
+            <div class="form-group">
+                <label for="params">パラメータ (任意):</label>
+                <input type="text" id="params" placeholder="例: --ar 16:9 --v 6.0">
+            </div>
+        </div>
+
+        <div class="output">
+            <h2>生成されたプロンプト:</h2>
+            <textarea id="result-prompt" readonly></textarea>
+            <button id="copy-btn">プロンプトをコピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

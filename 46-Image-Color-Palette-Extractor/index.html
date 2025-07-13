@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像カラーパレット抽出ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>画像カラーパレット抽出ツール</h1>
+        <p>画像をアップロードすると、主要な色を抽出してカラーパレットを生成します。</p>
+        
+        <div class="form-group">
+            <label for="upload-image">画像を選択:</label>
+            <input type="file" id="upload-image" accept="image/*">
+        </div>
+        
+        <button id="extract-btn">カラーパレットを抽出</button>
+        
+        <div class="results">
+            <h2>抽出されたカラーパレット:</h2>
+            <div id="palette-display"></div>
+            <canvas id="image-canvas" style="display:none;"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

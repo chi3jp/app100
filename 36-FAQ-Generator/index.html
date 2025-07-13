@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ自動生成ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FAQ自動生成ツール</h1>
+        <p>サービスや製品の概要を入力すると、AIがよくある質問とその回答を生成します。</p>
+        
+        <div class="form-group">
+            <label for="service-description">サービス・製品の概要:</label>
+            <textarea id="service-description" placeholder="例: オンライン英会話サービス、24時間レッスン可能、ネイティブ講師、月額定額制"></textarea>
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">FAQを生成</button>
+        
+        <div class="results">
+            <h2>生成されたFAQ:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

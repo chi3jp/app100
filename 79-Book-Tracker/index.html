@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>読書記録アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>読書記録アプリ</h1>
+        <p>読んだ本のタイトルと感想を記録しましょう。</p>
+        
+        <div class="form-group">
+            <label for="book-title">本のタイトル:</label>
+            <input type="text" id="book-title" placeholder="例: 吾輩は猫である">
+        </div>
+        <div class="form-group">
+            <label for="book-notes">感想・メモ:</label>
+            <textarea id="book-notes" placeholder="ここに感想やメモを入力してください。"></textarea>
+        </div>
+        
+        <button id="add-book-btn">記録を追加</button>
+        
+        <div class="results">
+            <h2>読書リスト:</h2>
+            <ul id="book-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

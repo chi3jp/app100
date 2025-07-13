@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重複行削除ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>重複行削除ツール</h1>
+        <p>入力したテキストから重複する行を削除します。</p>
+        
+        <div class="form-group">
+            <label for="input-text">入力テキスト:</label>
+            <textarea id="input-text" placeholder="ここにテキストを入力してください。\n各行が個別の要素として扱われます。"></textarea>
+        </div>
+        
+        <button id="remove-duplicates-btn">重複行を削除</button>
+        
+        <div class="results">
+            <h2>結果:</h2>
+            <textarea id="output-text" readonly></textarea>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

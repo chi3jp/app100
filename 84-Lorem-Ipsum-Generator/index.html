@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum（ダミーテキスト）生成</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem Ipsum（ダミーテキスト）生成</h1>
+        <p>生成したい段落数を指定して、ダミーテキストを生成します。</p>
+        
+        <div class="form-group">
+            <label for="num-paragraphs">段落数:</label>
+            <input type="number" id="num-paragraphs" value="3" min="1" max="10">
+        </div>
+        
+        <button id="generate-btn">生成</button>
+        
+        <div class="results">
+            <h2>生成されたテキスト:</h2>
+            <textarea id="generated-text" readonly></textarea>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

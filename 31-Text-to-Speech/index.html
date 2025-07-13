@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキスト読み上げ（簡易版）</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>テキスト読み上げ（簡易版）</h1>
+        <p>入力した文章をブラウザが読み上げます。</p>
+        
+        <div class="form-group">
+            <label for="input-text">読み上げたい文章:</label>
+            <textarea id="input-text" placeholder="ここに文章を入力してください。"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="voice-select">声の選択:</label>
+            <select id="voice-select"></select>
+        </div>
+        <div class="controls">
+            <button id="play-btn">読み上げ開始</button>
+            <button id="stop-btn" disabled>停止</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

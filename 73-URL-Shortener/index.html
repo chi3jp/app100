@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL短縮ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>URL短縮ツール</h1>
+        <p>長いURLを短縮します。</p>
+        
+        <div class="form-group">
+            <label for="long-url">長いURL:</label>
+            <input type="url" id="long-url" placeholder="例: https://very-long-example.com/path/to/page?param1=value1&param2=value2">
+        </div>
+
+        <div class="api-config">
+            <p class="note"><b>注:</b> このアプリはBitly APIを利用します。Bitly APIはAPIキーが必要です。<a href="https://bitly.com/a/sign_up" target="_blank">Bitly</a>でアカウントを作成し、APIキーを取得してください。</p>
+            <label for="bitly-api-key">Bitly APIキー:</label>
+            <input type="password" id="bitly-api-key" placeholder="ここにBitly APIキーを入力してください">
+        </div>
+        
+        <button id="shorten-btn">短縮する</button>
+        
+        <div class="results">
+            <h2>短縮URL:</h2>
+            <input type="text" id="short-url" readonly>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

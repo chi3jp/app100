@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ロゴアイデア・ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ロゴアイデア・ジェネレーター</h1>
+        <p>ブランド名やコンセプトを入力すると、AIがロゴのアイデアを提案します。</p>
+        
+        <div class="form-group">
+            <label for="brand-name">ブランド名・会社名:</label>
+            <input type="text" id="brand-name" placeholder="例: TechFlow, CatCafe">
+        </div>
+        <div class="form-group">
+            <label for="concept">コンセプト・キーワード:</label>
+            <textarea id="concept" placeholder="例: 革新、信頼、親しみやすさ、猫、コーヒー"></textarea>
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">アイデアを生成</button>
+        
+        <div class="results">
+            <h2>生成されたロゴアイデア:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アイコン・リサイザー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>アイコン・リサイザー</h1>
+        <p>画像をアップロードし、指定したサイズにリサイズします。</p>
+        
+        <div class="form-group">
+            <label for="upload-image">画像を選択:</label>
+            <input type="file" id="upload-image" accept="image/*">
+        </div>
+        <div class="form-group">
+            <label for="new-width">新しい幅 (px):</label>
+            <input type="number" id="new-width" value="64" min="1">
+        </div>
+        <div class="form-group">
+            <label for="new-height">新しい高さ (px):</label>
+            <input type="number" id="new-height" value="64" min="1">
+        </div>
+        
+        <button id="resize-btn">リサイズしてダウンロード</button>
+        
+        <div class="results">
+            <h2>プレビュー:</h2>
+            <canvas id="preview-canvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

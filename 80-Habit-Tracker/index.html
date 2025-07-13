@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>習慣トラッカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>習慣トラッカー</h1>
+        <p>新しい習慣を追加し、毎日記録しましょう。</p>
+        
+        <div class="form-group">
+            <label for="new-habit">新しい習慣:</label>
+            <input type="text" id="new-habit" placeholder="例: 毎日読書、朝活、運動">
+            <button id="add-habit-btn">追加</button>
+        </div>
+        
+        <div class="results">
+            <h2>習慣リスト:</h2>
+            <ul id="habit-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

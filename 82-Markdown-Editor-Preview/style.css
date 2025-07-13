@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.editor-area {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#markdown-input {
+    flex: 1;
+    height: 500px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1.1em;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+#preview-output {
+    flex: 1;
+    height: 500px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    text-align: left;
+}
+
+/* Markdown Preview Basic Styles */
+#preview-output h1 {
+    font-size: 2em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#preview-output h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#preview-output p {
+    margin-bottom: 10px;
+}
+
+#preview-output pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+#preview-output code {
+    font-family: monospace;
+}

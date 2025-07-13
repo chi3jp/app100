@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSグラデーション・ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSSグラデーション・ジェネレーター</h1>
+        <p>色や方向を調整して、美しいCSSグラデーションを生成しましょう。</p>
+        
+        <div class="controls">
+            <div class="form-group">
+                <label for="color1">色1:</label>
+                <input type="color" id="color1" value="#ff7e5f">
+            </div>
+            <div class="form-group">
+                <label for="color2">色2:</label>
+                <input type="color" id="color2" value="#feb47b">
+            </div>
+            <div class="form-group">
+                <label for="direction">方向:</label>
+                <input type="range" id="direction" min="0" max="360" value="90">
+                <span id="direction-value">90</span>deg
+            </div>
+        </div>
+
+        <div class="gradient-preview">
+            <h2>プレビュー:</h2>
+            <div id="preview-box"></div>
+        </div>
+
+        <div class="css-output">
+            <h2>生成されたCSS:</h2>
+            <textarea id="css-code" readonly></textarea>
+            <button id="copy-btn">CSSコードをコピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

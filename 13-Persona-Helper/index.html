@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ペルソナ設定ヘルパー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ペルソナ設定ヘルパー</h1>
+        <p>ターゲット層の簡単な情報を入力すると、AIが詳細なペルソナを生成します。</p>
+        
+        <div class="form-group">
+            <label for="target-info">ターゲット層の簡単な情報:</label>
+            <textarea id="target-info" placeholder="例: 30代女性、都内在住、IT企業勤務、趣味は旅行とカフェ巡り、SNSで情報収集"></textarea>
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">ペルソナを生成</button>
+        
+        <div class="results">
+            <h2>生成されたペルソナ:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

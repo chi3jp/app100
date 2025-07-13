@@ -1,0 +1,116 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #218838;
+}
+
+.results {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#habit-list {
+    list-style: none;
+    padding: 0;
+}
+
+#habit-list li {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 4px solid #007bff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#habit-list li .habit-info {
+    flex-grow: 1;
+}
+
+#habit-list li .habit-info h3 {
+    margin: 0 0 5px 0;
+    color: #4a4a4a;
+}
+
+#habit-list li .habit-info .streak {
+    font-size: 0.9em;
+    color: #666;
+}
+
+#habit-list li .actions button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+#habit-list li .actions .done-btn {
+    color: #28a745;
+}
+
+#habit-list li .actions .done-btn.checked {
+    color: #007bff;
+}
+
+#habit-list li .actions .delete-btn {
+    color: #dc3545;
+}

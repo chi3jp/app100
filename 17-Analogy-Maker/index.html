@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アナロジー（たとえ話）メーカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>アナロジー（たとえ話）メーカー</h1>
+        <p>説明したい概念を入力すると、AIが分かりやすいたとえ話を提案します。</p>
+        
+        <div class="form-group">
+            <label for="concept">説明したい概念:</label>
+            <input type="text" id="concept" placeholder="例: ブロックチェーン、AIの仕組み、量子コンピュータ">
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">たとえ話を生成</button>
+        
+        <div class="results">
+            <h2>生成されたたとえ話:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

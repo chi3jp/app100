@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URLエンコーダー/デコーダー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>URLエンコーダー/デコーダー</h1>
+        <p>URLのエンコードまたはデコードを行います。</p>
+        
+        <div class="form-group">
+            <label for="input-text">入力URL/テキスト:</label>
+            <textarea id="input-text" placeholder="ここにURLまたはテキストを入力してください。"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="conversion-type">操作:</label>
+            <select id="conversion-type">
+                <option value="encode">エンコード</option>
+                <option value="decode">デコード</option>
+            </select>
+        </div>
+        
+        <button id="process-btn">実行</button>
+        
+        <div class="results">
+            <h2>結果:</h2>
+            <textarea id="output-text" readonly></textarea>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

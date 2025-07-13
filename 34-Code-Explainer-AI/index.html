@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コード解説AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>コード解説AI</h1>
+        <p>コードを入力すると、AIがそのコードの機能や仕組みを分かりやすく解説します。</p>
+        
+        <div class="form-group">
+            <label for="input-code">コード:</label>
+            <textarea id="input-code" placeholder="ここにコードを入力してください。"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="language">言語 (任意):</label>
+            <input type="text" id="language" placeholder="例: JavaScript, Python, HTML">
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="explain-btn">解説を生成</button>
+        
+        <div class="results">
+            <h2>解説:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

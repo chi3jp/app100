@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFTコレクション・フロア価格チェッカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NFTコレクション・フロア価格チェッカー</h1>
+        <p>NFTコレクションのスラッグを入力すると、フロア価格を表示します。</p>
+        
+        <div class="form-group">
+            <label for="collection-slug">コレクションスラッグ:</label>
+            <input type="text" id="collection-slug" placeholder="例: bored-ape-yacht-club">
+        </div>
+
+        <div class="api-config">
+            <p class="note"><b>注:</b> このアプリはOpenSea APIを利用します。OpenSea APIはAPIキー不要で利用できますが、レート制限があります。</p>
+        </div>
+        
+        <button id="check-price-btn">フロア価格をチェック</button>
+        
+        <div class="results">
+            <h2>フロア価格:</h2>
+            <p id="floor-price-result">-</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハッシュタグ提案ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ハッシュタグ提案ツール</h1>
+        <p>投稿内容を入力すると、AIが関連性の高いハッシュタグを提案します。</p>
+        
+        <div class="form-group">
+            <label for="post-content">投稿内容:</label>
+            <textarea id="post-content" placeholder="例: 新しいWebアプリをリリースしました！AIとWeb3の技術を組み合わせた画期的なツールです。"></textarea>
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">ハッシュタグを提案</button>
+        
+        <div class="results">
+            <h2>提案されたハッシュタグ:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

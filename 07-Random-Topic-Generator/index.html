@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダムお題メーカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ランダムお題メーカー</h1>
+        <p>ボタンを押して、創作のためのお題をゲットしよう！</p>
+
+        <div class="controls">
+            <label for="topic-category">カテゴリ:</label>
+            <select id="topic-category">
+                <option value="blog">ブログネタ</option>
+                <option value="illustration">イラスト</option>
+                <option value="short_story">ショートストーリー</option>
+            </select>
+        </div>
+
+        <button id="generate-btn">新しいお題を生成</button>
+
+        <div class="result">
+            <p id="result-text">ここに結果が表示されます</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

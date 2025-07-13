@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="connect-src https://api.rss2json.com;">
+    <title>トレンドキーワード・ファインダー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>トレンドキーワード・ファインダー</h1>
+        <p>興味のあるジャンルを選択して、関連するトレンドキーワードを見つけよう。</p>
+        
+        <div class="input-group">
+            <select id="category-select">
+                <option value="tech">テクノロジー</option>
+                <option value="fashion">ファッション</option>
+                <option value="gaming">ゲーム</option>
+                <option value="food">グルメ</option>
+            </select>
+            <button id="search-btn">キーワードを取得</button>
+        </div>
+        
+        <div class="results">
+            <h2>キーワードリスト</h2>
+            <ul id="keyword-list">
+                <!-- キーワードがここに表示されます -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

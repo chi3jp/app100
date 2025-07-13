@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキストから単語リスト抽出</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>テキストから単語リスト抽出</h1>
+        <p>文章から単語を抽出し、リスト表示します。</p>
+        
+        <div class="form-group">
+            <label for="input-text">文章:</label>
+            <textarea id="input-text" placeholder="ここに文章を入力してください。"></textarea>
+        </div>
+        
+        <button id="extract-btn">単語を抽出</button>
+        
+        <div class="results">
+            <h2>抽出された単語リスト:</h2>
+            <textarea id="output-text" readonly></textarea>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モックアップ画像作成ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>モックアップ画像作成ツール</h1>
+        <p>背景色とテキストを入力して、シンプルなモックアップ画像を生成します。</p>
+        
+        <div class="controls">
+            <div class="form-group">
+                <label for="bg-color">背景色:</label>
+                <input type="color" id="bg-color" value="#f0f0f0">
+            </div>
+            <div class="form-group">
+                <label for="text-color">文字色:</label>
+                <input type="color" id="text-color" value="#333333">
+            </div>
+            <div class="form-group">
+                <label for="mockup-text">テキスト:</label>
+                <input type="text" id="mockup-text" value="Your Title Here">
+            </div>
+            <div class="form-group">
+                <label for="font-size">フォントサイズ (px):</label>
+                <input type="number" id="font-size" value="48" min="10">
+            </div>
+        </div>
+
+        <button id="generate-btn">モックアップを生成してダウンロード</button>
+        
+        <div class="results">
+            <h2>プレビュー:</h2>
+            <canvas id="mockup-canvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スマートコントラクト・テンプレート集</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>スマートコントラクト・テンプレート集</h1>
+        <p>よく使われるスマートコントラクトのテンプレートを提供します。</p>
+        
+        <div class="form-group">
+            <label for="template-select">テンプレートを選択:</label>
+            <select id="template-select">
+                <option value="erc20">ERC-20 (トークン)</option>
+                <option value="erc721">ERC-721 (NFT)</option>
+                <option value="ownable">Ownable (所有権)</option>
+                <option value="pausable">Pausable (一時停止可能)</option>
+            </select>
+        </div>
+        
+        <button id="show-code-btn">コードを表示</button>
+        
+        <div class="results">
+            <h2>コード:</h2>
+            <textarea id="contract-code" readonly></textarea>
+            <button id="copy-btn">コードをコピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

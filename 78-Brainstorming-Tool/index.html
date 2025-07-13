@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブレインストーミング・ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ブレインストーミング・ツール</h1>
+        <p>テーマを入力し、アイデアを自由に追加・整理しましょう。</p>
+        
+        <div class="form-group">
+            <label for="brainstorm-topic">テーマ:</label>
+            <input type="text" id="brainstorm-topic" placeholder="例: 新規事業アイデア、ブログネタ、イベント企画">
+        </div>
+        <div class="form-group">
+            <label for="new-idea">新しいアイデア:</label>
+            <input type="text" id="new-idea" placeholder="アイデアを入力">
+            <button id="add-idea-btn">追加</button>
+        </div>
+        
+        <div class="results">
+            <h2>アイデアリスト:</h2>
+            <ul id="idea-list"></ul>
+            <button id="clear-all-btn">すべてクリア</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

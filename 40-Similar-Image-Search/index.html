@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>類似画像検索（手持ち画像から）</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>類似画像検索（手持ち画像から）</h1>
+        <p>画像ファイルをアップロードすると、AIが類似画像を検索します。</p>
+        
+        <div class="form-group">
+            <label for="upload-image">画像ファイルを選択:</label>
+            <input type="file" id="upload-image" accept="image/*">
+        </div>
+
+        <div class="api-config">
+            <p class="note"><b>注:</b> このアプリは簡易版のため、実際の類似画像検索は行いません。AIによる類似画像検索には、別途Google Cloud Vision APIなどの利用が必要です。</p>
+        </div>
+        
+        <button id="search-btn">類似画像を検索</button>
+        
+        <div class="results">
+            <h2>検索結果:</h2>
+            <div id="result-area"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

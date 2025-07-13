@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アスペクト比計算ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>アスペクト比計算ツール</h1>
+        <p>幅と高さを入力すると、アスペクト比を計算します。</p>
+        
+        <div class="form-group">
+            <label for="width">幅:</label>
+            <input type="number" id="width" value="1920" min="1">
+        </div>
+        <div class="form-group">
+            <label for="height">高さ:</label>
+            <input type="number" id="height" value="1080" min="1">
+        </div>
+        
+        <button id="calculate-btn">アスペクト比を計算</button>
+        
+        <div class="results">
+            <h2>アスペクト比:</h2>
+            <p id="aspect-ratio-result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

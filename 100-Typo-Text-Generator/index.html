@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打ち間違い風テキストジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>打ち間違い風テキストジェネレーター</h1>
+        <p>入力したテキストを、意図的に打ち間違い風に変換します。</p>
+        
+        <div class="form-group">
+            <label for="input-text">入力テキスト:</label>
+            <textarea id="input-text" placeholder="ここにテキストを入力してください。"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="typo-strength">打ち間違いの強さ (0-10):</label>
+            <input type="range" id="typo-strength" min="0" max="10" value="3">
+            <span id="typo-strength-value">3</span>
+        </div>
+        
+        <button id="generate-btn">生成</button>
+        
+        <div class="results">
+            <h2>生成されたテキスト:</h2>
+            <textarea id="output-text" readonly></textarea>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

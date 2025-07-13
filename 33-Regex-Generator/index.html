@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正規表現ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>正規表現ジェネレーター</h1>
+        <p>抽出したい文字列のパターンを説明すると、AIが正規表現を生成します。</p>
+        
+        <div class="form-group">
+            <label for="pattern-description">抽出したい文字列のパターン:</label>
+            <textarea id="pattern-description" placeholder="例: メールアドレス、電話番号、日付（YYYY/MM/DD形式）"></textarea>
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">正規表現を生成</button>
+        
+        <div class="results">
+            <h2>生成された正規表現:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

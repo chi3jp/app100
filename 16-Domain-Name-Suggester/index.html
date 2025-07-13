@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドメイン名アイデア出しツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ドメイン名アイデア出しツール</h1>
+        <p>キーワードやコンセプトを入力すると、AIがドメイン名のアイデアを提案します。</p>
+        
+        <div class="form-group">
+            <label for="keywords">キーワード・コンセプト:</label>
+            <input type="text" id="keywords" placeholder="例: 猫、テクノロジー、ブログ">
+        </div>
+        <div class="form-group">
+            <label for="tld">希望するTLD (任意):</label>
+            <input type="text" id="tld" placeholder="例: .com, .net, .jp">
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">アイデアを生成</button>
+        
+        <div class="results">
+            <h2>生成されたドメイン名アイデア:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

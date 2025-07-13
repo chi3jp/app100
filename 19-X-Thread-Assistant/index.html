@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X(Twitter)投稿スレッド作成アシスタント</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>X(Twitter)投稿スレッド作成アシスタント</h1>
+        <p>伝えたい内容を入力すると、AIがX(Twitter)のスレッド形式で投稿案を生成します。</p>
+        
+        <div class="form-group">
+            <label for="main-topic">伝えたい内容:</label>
+            <textarea id="main-topic" placeholder="例: 新しいプログラミング言語の学習方法、Web3の最新トレンド、AIツールの活用事例"></textarea>
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">スレッド案を生成</button>
+        
+        <div class="results">
+            <h2>生成されたスレッド案:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

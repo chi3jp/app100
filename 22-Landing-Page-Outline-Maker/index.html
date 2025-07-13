@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランディングページ構成案メーカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ランディングページ構成案メーカー</h1>
+        <p>商品やサービスの概要を入力すると、AIが効果的なランディングページの構成案を提案します。</p>
+        
+        <div class="form-group">
+            <label for="product-service">商品・サービス概要:</label>
+            <textarea id="product-service" placeholder="例: AIを活用した英会話アプリ、初心者でも楽しく学べる、月額980円"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="target-audience">ターゲット層 (任意):</label>
+            <input type="text" id="target-audience" placeholder="例: 英語学習に挫折した社会人、手軽に始めたい学生">
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">構成案を生成</button>
+        
+        <div class="results">
+            <h2>生成された構成案:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

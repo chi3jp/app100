@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポッドキャスト・トピック・ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ポッドキャスト・トピック・ジェネレーター</h1>
+        <p>ポッドキャストのジャンルやターゲット層を入力すると、AIがトピックのアイデアを提案します。</p>
+        
+        <div class="form-group">
+            <label for="podcast-genre">ポッドキャストのジャンル:</label>
+            <input type="text" id="podcast-genre" placeholder="例: テクノロジー、ビジネス、ライフスタイル">
+        </div>
+        <div class="form-group">
+            <label for="target-audience">ターゲット層 (任意):</label>
+            <input type="text" id="target-audience" placeholder="例: 20代のエンジニア、子育て中の主婦">
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">トピックを生成</button>
+        
+        <div class="results">
+            <h2>生成されたトピック:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

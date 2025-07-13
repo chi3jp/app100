@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ウォレットアドレスQRコード表示</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ウォレットアドレスQRコード表示</h1>
+        <p>あなたのウォレットアドレスを入力すると、QRコードを生成します。</p>
+        
+        <div class="form-group">
+            <label for="wallet-address">ウォレットアドレス:</label>
+            <input type="text" id="wallet-address" placeholder="例: 0x... (Ethereumアドレス)">
+        </div>
+        
+        <button id="generate-btn">QRコードを生成</button>
+        
+        <div class="results">
+            <h2>生成されたQRコード:</h2>
+            <div id="qrcode-container"></div>
+            <p class="note">右クリックで画像を保存できます。</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode.js/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

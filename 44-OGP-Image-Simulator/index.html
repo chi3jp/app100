@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGP画像シミュレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OGP画像シミュレーター</h1>
+        <p>OGP画像のURLを入力して、SNSでの表示をシミュレートします。</p>
+        
+        <div class="form-group">
+            <label for="ogp-image-url">OGP画像のURL:</label>
+            <input type="url" id="ogp-image-url" placeholder="例: https://example.com/ogp.jpg">
+        </div>
+        
+        <button id="simulate-btn">シミュレート</button>
+        
+        <div class="results">
+            <h2>プレビュー:</h2>
+            <div class="preview-section">
+                <h3>Twitter Card (Summary Card with Large Image)</h3>
+                <div class="twitter-card">
+                    <img id="twitter-image" src="" alt="Twitter OGP Image">
+                    <div class="card-content">
+                        <p class="card-title">ここにタイトルが入ります</p>
+                        <p class="card-description">ここにディスクリプションが入ります。最大200文字程度。</p>
+                        <p class="card-domain">example.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-section">
+                <h3>Facebook OGP</h3>
+                <div class="facebook-ogp">
+                    <img id="facebook-image" src="" alt="Facebook OGP Image">
+                    <div class="ogp-content">
+                        <p class="ogp-domain">example.com</p>
+                        <p class="ogp-title">ここにタイトルが入ります</p>
+                        <p class="ogp-description">ここにディスクリプションが入ります。最大200文字程度。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

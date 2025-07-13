@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキスト並び替えツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>テキスト並び替えツール</h1>
+        <p>入力したテキストの行を、様々な方法で並び替えます。</p>
+        
+        <div class="form-group">
+            <label for="input-text">入力テキスト:</label>
+            <textarea id="input-text" placeholder="ここにテキストを入力してください。\n各行が個別の要素として扱われます。"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="sort-type">並び替え方法:</label>
+            <select id="sort-type">
+                <option value="alphabetical-asc">アルファベット順 (昇順)</option>
+                <option value="alphabetical-desc">アルファベット順 (降順)</option>
+                <option value="length-asc">文字数順 (昇順)</option>
+                <option value="length-desc">文字数順 (降順)</option>
+                <option value="random">ランダム</option>
+            </select>
+        </div>
+        
+        <button id="sort-btn">並び替える</button>
+        
+        <div class="results">
+            <h2>並び替え結果:</h2>
+            <textarea id="output-text" readonly></textarea>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

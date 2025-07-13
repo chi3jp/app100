@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdownエディタ＆プレビュー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Markdownエディタ＆プレビュー</h1>
+        <p>Markdown記法で文章を書き、リアルタイムでプレビューを確認できます。</p>
+        
+        <div class="editor-area">
+            <textarea id="markdown-input" placeholder="Markdown記法で入力してください..."></textarea>
+            <div id="preview-output"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>インタビュー質問ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>インタビュー質問ジェネレーター</h1>
+        <p>インタビューのテーマや対象者を入力すると、AIが質問のアイデアを提案します。</p>
+        
+        <div class="form-group">
+            <label for="interview-theme">インタビューのテーマ:</label>
+            <textarea id="interview-theme" placeholder="例: スタートアップの成功要因、フリーランスの働き方、AIの倫理問題"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="interviewee-type">インタビュー対象者 (任意):</label>
+            <input type="text" id="interviewee-type" placeholder="例: 経験豊富な起業家、若手フリーランス、AI研究者">
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">質問を生成</button>
+        
+        <div class="results">
+            <h2>生成された質問:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

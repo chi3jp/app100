@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章校正・リライトツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>文章校正・リライトツール</h1>
+        <p>文章を入力すると、AIが校正やリライトの提案をします。</p>
+        
+        <div class="form-group">
+            <label for="input-text">文章:</label>
+            <textarea id="input-text" placeholder="ここに文章を入力してください。"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="action-type">操作:</label>
+            <select id="action-type">
+                <option value="proofread">校正</option>
+                <option value="rewrite">リライト</option>
+                <option value="simplify">平易化</option>
+                <option value="formalize">丁寧な表現に</option>
+            </select>
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="process-btn">実行</button>
+        
+        <div class="results">
+            <h2>結果:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

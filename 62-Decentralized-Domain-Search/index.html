@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分散型ドメイン検索</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>分散型ドメイン検索</h1>
+        <p>希望するドメイン名が、ENSやUnstoppable Domainsで利用可能かチェックします。</p>
+        
+        <div class="form-group">
+            <label for="domain-name">ドメイン名:</label>
+            <input type="text" id="domain-name" placeholder="例: myawesomeproject">
+        </div>
+
+        <div class="api-config">
+            <label for="infura-project-id">Infura Project ID (ENS用):</label>
+            <input type="password" id="infura-project-id" placeholder="ここにInfura Project IDを入力してください">
+            <p class="note">Infura Project IDは<a href="https://infura.io/register" target="_blank">Infura</a>で無料で取得できます。</p>
+        </div>
+        
+        <button id="search-btn">検索</button>
+        
+        <div class="results">
+            <h2>検索結果:</h2>
+            <div id="ens-result"></div>
+            <div id="unstoppable-result"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

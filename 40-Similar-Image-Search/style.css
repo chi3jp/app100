@@ -1,0 +1,95 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.api-config {
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.api-config .note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#result-area {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 150px;
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+.result-image {
+    max-width: 100px;
+    height: auto;
+    margin: 5px;
+    border: 1px solid #ddd;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ガス代（Gas Fee）チェッカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ガス代（Gas Fee）チェッカー</h1>
+        <p>現在のEthereumネットワークのガス代を表示します。</p>
+        
+        <div class="api-config">
+            <label for="etherscan-api-key">Etherscan APIキー:</label>
+            <input type="password" id="etherscan-api-key" placeholder="ここにEtherscan APIキーを入力してください">
+            <p class="note">APIキーは<a href="https://etherscan.io/myapikey" target="_blank">Etherscan</a>で無料で取得できます。</p>
+        </div>
+        
+        <button id="check-gas-btn">ガス代をチェック</button>
+        
+        <div class="results">
+            <h2>現在のガス代:</h2>
+            <p>標準: <span id="standard-gas">-</span> Gwei</p>
+            <p>高速: <span id="fast-gas">-</span> Gwei</p>
+            <p>最速: <span id="fastest-gas">-</span> Gwei</p>
+            <p class="note">データはEtherscan APIから取得しています。</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大文字/小文字変換ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>大文字/小文字変換ツール</h1>
+        <p>入力したテキストの大文字/小文字を変換します。</p>
+        
+        <div class="form-group">
+            <label for="input-text">入力テキスト:</label>
+            <textarea id="input-text" placeholder="ここにテキストを入力してください。"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="conversion-type">変換タイプ:</label>
+            <select id="conversion-type">
+                <option value="uppercase">すべて大文字</option>
+                <option value="lowercase">すべて小文字</option>
+                <option value="capitalize">単語の先頭を大文字</option>
+                <option value="togglecase">大文字と小文字を反転</option>
+            </select>
+        </div>
+        
+        <button id="convert-btn">変換</button>
+        
+        <div class="results">
+            <h2>変換結果:</h2>
+            <textarea id="output-text" readonly></textarea>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

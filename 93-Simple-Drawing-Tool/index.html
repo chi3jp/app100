@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡易お絵かきツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>簡易お絵かきツール</h1>
+        <p>キャンバスに自由に絵を描きましょう。</p>
+        
+        <div class="controls">
+            <div class="form-group">
+                <label for="color-picker">色:</label>
+                <input type="color" id="color-picker" value="#000000">
+            </div>
+            <div class="form-group">
+                <label for="line-width">線の太さ:</label>
+                <input type="range" id="line-width" min="1" max="20" value="5">
+                <span id="line-width-value">5</span>px
+            </div>
+            <button id="clear-btn">クリア</button>
+            <button id="download-btn">ダウンロード</button>
+        </div>
+        
+        <canvas id="drawing-canvas" width="600" height="400"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

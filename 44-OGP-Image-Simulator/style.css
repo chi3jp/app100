@@ -1,0 +1,152 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.preview-section {
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.preview-section h3 {
+    margin-top: 0;
+    color: #4a4a4a;
+}
+
+.twitter-card {
+    border: 1px solid #e1e8ed;
+    border-radius: 14px;
+    overflow: hidden;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.twitter-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.twitter-card .card-content {
+    padding: 10px 15px;
+}
+
+.twitter-card .card-title {
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0 0 5px 0;
+    color: #1da1f2;
+}
+
+.twitter-card .card-description {
+    font-size: 0.9em;
+    color: #657786;
+    margin: 0 0 5px 0;
+}
+
+.twitter-card .card-domain {
+    font-size: 0.8em;
+    color: #8899a6;
+    margin: 0;
+}
+
+.facebook-ogp {
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+    overflow: hidden;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.facebook-ogp img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.facebook-ogp .ogp-content {
+    padding: 10px 12px;
+}
+
+.facebook-ogp .ogp-domain {
+    font-size: 0.75em;
+    color: #606770;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.facebook-ogp .ogp-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #1d2129;
+    margin: 0 0 5px 0;
+}
+
+.facebook-ogp .ogp-description {
+    font-size: 0.9em;
+    color: #606770;
+    margin: 0;
+}

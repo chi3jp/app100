@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ダミー画像プレースホルダー作成</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ダミー画像プレースホルダー作成</h1>
+        <p>サイズや色を指定して、開発用のダミー画像を生成します。</p>
+        
+        <div class="controls">
+            <div class="form-group">
+                <label for="width">幅 (px):</label>
+                <input type="number" id="width" value="300" min="1">
+            </div>
+            <div class="form-group">
+                <label for="height">高さ (px):</label>
+                <input type="number" id="height" value="200" min="1">
+            </div>
+            <div class="form-group">
+                <label for="bg-color">背景色:</label>
+                <input type="color" id="bg-color" value="#cccccc">
+            </div>
+            <div class="form-group">
+                <label for="text-color">文字色:</label>
+                <input type="color" id="text-color" value="#000000">
+            </div>
+            <div class="form-group">
+                <label for="text">表示テキスト (任意):</label>
+                <input type="text" id="text" placeholder="例: Image">
+            </div>
+        </div>
+
+        <div class="image-output">
+            <h2>プレビュー:</h2>
+            <img id="image-preview" src="" alt="Generated Image">
+            <h2>URL:</h2>
+            <textarea id="image-url" readonly></textarea>
+            <button id="copy-btn">URLをコピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

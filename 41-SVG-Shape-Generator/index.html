@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVGシェイプ・ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SVGシェイプ・ジェネレーター</h1>
+        <p>パラメータを調整して、様々なSVGシェイプを生成しましょう。</p>
+        
+        <div class="controls">
+            <div class="form-group">
+                <label for="shape-type">シェイプの種類:</label>
+                <select id="shape-type">
+                    <option value="circle">円</option>
+                    <option value="rect">四角形</option>
+                    <option value="ellipse">楕円</option>
+                    <option value="line">線</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fill-color">塗りつぶし色:</label>
+                <input type="color" id="fill-color" value="#3498db">
+            </div>
+            <div class="form-group">
+                <label for="stroke-color">線の色:</label>
+                <input type="color" id="stroke-color" value="#2c3e50">
+            </div>
+            <div class="form-group">
+                <label for="stroke-width">線の太さ:</label>
+                <input type="range" id="stroke-width" min="0" max="10" value="2">
+                <span id="stroke-width-value">2</span>px
+            </div>
+        </div>
+
+        <div class="svg-output">
+            <h2>生成されたSVG:</h2>
+            <div id="svg-preview"></div>
+            <textarea id="svg-code" readonly></textarea>
+            <button id="copy-btn">SVGコードをコピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

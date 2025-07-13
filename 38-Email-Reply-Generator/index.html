@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>問い合わせメール返信文案ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>問い合わせメール返信文案ジェネレーター</h1>
+        <p>問い合わせ内容を入力すると、AIが適切な返信文案を生成します。</p>
+        
+        <div class="form-group">
+            <label for="inquiry-content">問い合わせ内容:</label>
+            <textarea id="inquiry-content" placeholder="例: サービスの料金プランについて、機能の不具合報告、資料請求"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="response-tone">返信のトーン (任意):</label>
+            <input type="text" id="response-tone" placeholder="例: 丁寧、フレンドリー、簡潔">
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">返信文案を生成</button>
+        
+        <div class="results">
+            <h2>生成された返信文案:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

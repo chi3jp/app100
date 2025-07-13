@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡易アンケートフォーム作成</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>簡易アンケートフォーム作成</h1>
+        <p>質問を追加して、シンプルなアンケートフォームを作成します。</p>
+        
+        <div class="form-group">
+            <label for="question-text">質問:</label>
+            <input type="text" id="question-text" placeholder="例: サービス満足度はいかがでしたか？">
+        </div>
+        <div class="form-group">
+            <label for="question-type">質問タイプ:</label>
+            <select id="question-type">
+                <option value="text">自由記述</option>
+                <option value="radio">単一選択</option>
+                <option value="checkbox">複数選択</option>
+            </select>
+        </div>
+        <div class="form-group" id="options-group" style="display: none;">
+            <label for="options-text">選択肢 (カンマ区切り):</label>
+            <input type="text" id="options-text" placeholder="例: 良い,普通,悪い">
+        </div>
+        
+        <button id="add-question-btn">質問を追加</button>
+        
+        <div class="results">
+            <h2>プレビュー:</h2>
+            <form id="survey-form-preview"></form>
+            <h2>HTMLコード:</h2>
+            <textarea id="html-code" readonly></textarea>
+            <button id="copy-btn">HTMLコードをコピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

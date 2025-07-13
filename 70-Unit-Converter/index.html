@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>単位変換ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>単位変換ツール</h1>
+        <p>様々な単位を相互に変換します。</p>
+        
+        <div class="form-group">
+            <label for="value">値:</label>
+            <input type="number" id="value" value="1">
+        </div>
+        <div class="form-group">
+            <label for="from-unit">変換元単位:</label>
+            <select id="from-unit">
+                <optgroup label="長さ">
+                    <option value="meter">メートル (m)</option>
+                    <option value="kilometer">キロメートル (km)</option>
+                    <option value="mile">マイル (mi)</option>
+                    <option value="foot">フィート (ft)</option>
+                </optgroup>
+                <optgroup label="重さ">
+                    <option value="gram">グラム (g)</option>
+                    <option value="kilogram">キログラム (kg)</option>
+                    <option value="pound">ポンド (lb)</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="to-unit">変換先単位:</label>
+            <select id="to-unit">
+                <optgroup label="長さ">
+                    <option value="meter">メートル (m)</option>
+                    <option value="kilometer">キロメートル (km)</option>
+                    <option value="mile">マイル (mi)</option>
+                    <option value="foot">フィート (ft)</option>
+                </optgroup>
+                <optgroup label="重さ">
+                    <option value="gram">グラム (g)</option>
+                    <option value="kilogram">キログラム (kg)</option>
+                    <option value="pound">ポンド (lb)</option>
+                </optgroup>
+            </select>
+        </div>
+        
+        <button id="convert-btn">変換</button>
+        
+        <div class="results">
+            <h2>結果:</h2>
+            <p id="result-value"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI画像プロンプト翻訳ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI画像プロンプト翻訳ツール</h1>
+        <p>日本語のプロンプトをAI画像生成に適した英語に翻訳します。</p>
+        
+        <div class="form-group">
+            <label for="japanese-prompt">日本語プロンプト:</label>
+            <textarea id="japanese-prompt" placeholder="例: 美しい夕焼けのビーチ、猫が座っている、リアルな描写"></textarea>
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="translate-btn">翻訳する</button>
+        
+        <div class="results">
+            <h2>翻訳された英語プロンプト:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

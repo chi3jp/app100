@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube動画タイトル案ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube動画タイトル案ジェネレーター</h1>
+        <p>動画の内容を入力すると、AIが魅力的なタイトル案を提案します。</p>
+        
+        <div class="form-group">
+            <label for="video-content">動画の内容:</label>
+            <textarea id="video-content" placeholder="例: 初心者向けプログラミング学習ロードマップ、効率的な勉強法、挫折しないコツ"></textarea>
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">タイトル案を生成</button>
+        
+        <div class="results">
+            <h2>生成されたタイトル案:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

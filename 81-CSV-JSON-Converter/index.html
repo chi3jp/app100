@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV/JSONコンバーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSV/JSONコンバーター</h1>
+        <p>CSVとJSONデータを相互に変換します。</p>
+        
+        <div class="form-group">
+            <label for="input-data">入力データ:</label>
+            <textarea id="input-data" placeholder="CSVまたはJSONデータを入力してください。"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="conversion-type">変換方向:</label>
+            <select id="conversion-type">
+                <option value="csv-to-json">CSV → JSON</option>
+                <option value="json-to-csv">JSON → CSV</option>
+            </select>
+        </div>
+        
+        <button id="convert-btn">変換</button>
+        
+        <div class="results">
+            <h2>変換結果:</h2>
+            <textarea id="output-data" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

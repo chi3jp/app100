@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記事タイトルA/Bテスト案ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>記事タイトルA/Bテスト案ジェネレーター</h1>
+        <p>記事のテーマや目的を入力すると、AIがA/Bテスト用のタイトル案を複数提案します。</p>
+        
+        <div class="form-group">
+            <label for="article-theme">記事のテーマ:</label>
+            <input type="text" id="article-theme" placeholder="例: Web3の未来、AIとクリエイティブ">
+        </div>
+        <div class="form-group">
+            <label for="purpose">目的 (任意):</label>
+            <input type="text" id="purpose" placeholder="例: クリック率向上、読了率向上">
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">タイトル案を生成</button>
+        
+        <div class="results">
+            <h2>生成されたタイトル案:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

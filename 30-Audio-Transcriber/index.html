@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音声文字起こし（簡易版）</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>音声文字起こし（簡易版）</h1>
+        <p>音声ファイルを選択すると、文字起こしを行います。</p>
+        
+        <div class="form-group">
+            <label for="audio-file">音声ファイルを選択:</label>
+            <input type="file" id="audio-file" accept="audio/*">
+        </div>
+
+        <div class="api-config">
+            <p class="note"><b>注:</b> このアプリは簡易版のため、実際の文字起こしは行いません。AIによる文字起こしには、別途Google Cloud Speech-to-Text APIなどの利用が必要です。</p>
+        </div>
+        
+        <button id="transcribe-btn">文字起こしを開始</button>
+        
+        <div class="results">
+            <h2>文字起こし結果:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

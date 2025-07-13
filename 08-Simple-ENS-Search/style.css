@@ -1,0 +1,109 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-box span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6f42c1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #5a35a3;
+}
+
+.api-config {
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #e9f7ef;
+    border: 1px solid #d4edda;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.api-config .note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.api-config .note a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.api-config .note a:hover {
+    text-decoration: underline;
+}
+
+#result-area {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.available {
+    background-color: #e6ffe6;
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.unavailable {
+    background-color: #ffe6e6;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.error {
+    background-color: #fff3cd;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+}

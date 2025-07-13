@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記念日までのカウントダウン</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>記念日までのカウントダウン</h1>
+        <p>大切な日までの残り時間を表示します。</p>
+        
+        <div class="form-group">
+            <label for="event-name">イベント名:</label>
+            <input type="text" id="event-name" value="クリスマス">
+        </div>
+        <div class="form-group">
+            <label for="event-date">日付:</label>
+            <input type="date" id="event-date">
+        </div>
+        
+        <div class="countdown-display">
+            <p id="countdown-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

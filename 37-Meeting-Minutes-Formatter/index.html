@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>議事録フォーマット整形ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>議事録フォーマット整形ツール</h1>
+        <p>箇条書きやメモ形式の議事録を、AIが読みやすいフォーマットに整形します。</p>
+        
+        <div class="form-group">
+            <label for="raw-minutes">整形したい議事録（箇条書き、メモなど）:</label>
+            <textarea id="raw-minutes" placeholder="例: 
+- 日時: 2024/07/15 10:00
+- 参加者: 山田、田中、佐藤
+- 議題: 新プロジェクト進捗
+- 決定事項: 〇〇を来週までに実施
+- 宿題: 田中さん、資料作成"></textarea>
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="format-btn">整形する</button>
+        
+        <div class="results">
+            <h2>整形された議事録:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.word-display {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#current-word {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#submit-association-btn {
+    background-color: #28a745;
+}
+
+#submit-association-btn:hover {
+    background-color: #218838;
+}
+
+.results {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#association-list {
+    list-style: none;
+    padding: 0;
+}
+
+#association-list li {
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    border-left: 4px solid #6c757d;
+}

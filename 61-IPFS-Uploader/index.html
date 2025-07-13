@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPFSアップローダー（簡易版）</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IPFSアップローダー（簡易版）</h1>
+        <p>ファイルを選択し、IPFSにアップロードします。</p>
+        
+        <div class="form-group">
+            <label for="upload-file">ファイルを選択:</label>
+            <input type="file" id="upload-file">
+        </div>
+
+        <div class="api-config">
+            <label for="pinata-api-key">Pinata API Key:</label>
+            <input type="password" id="pinata-api-key" placeholder="ここにPinata API Keyを入力してください">
+            <label for="pinata-secret-api-key">Pinata Secret API Key:</label>
+            <input type="password" id="pinata-secret-api-key" placeholder="ここにPinata Secret API Keyを入力してください">
+            <p class="note">APIキーは<a href="https://app.pinata.cloud/keys" target="_blank">Pinata</a>で無料で取得できます。</p>
+        </div>
+        
+        <button id="upload-btn">IPFSにアップロード</button>
+        
+        <div class="results">
+            <h2>CID:</h2>
+            <p id="cid-result"></p>
+            <p><a id="gateway-link" href="#" target="_blank">IPFS Gatewayで表示</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

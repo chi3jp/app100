@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキスト差分比較ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>テキスト差分比較ツール</h1>
+        <p>2つのテキストの差分を視覚的に表示します。</p>
+        
+        <div class="text-inputs">
+            <textarea id="text1" placeholder="元のテキストを入力してください。"></textarea>
+            <textarea id="text2" placeholder="比較するテキストを入力してください。"></textarea>
+        </div>
+        
+        <button id="compare-btn">比較する</button>
+        
+        <div class="results">
+            <h2>差分:</h2>
+            <div id="diff-output"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/diff/dist/diff.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

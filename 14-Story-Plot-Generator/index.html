@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ストーリープロット・ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ストーリープロット・ジェネレーター</h1>
+        <p>物語の要素を入力すると、AIがプロットのアイデアを生成します。</p>
+        
+        <div class="form-group">
+            <label for="genre">ジャンル:</label>
+            <input type="text" id="genre" placeholder="例: SF、ファンタジー、ミステリー">
+        </div>
+        <div class="form-group">
+            <label for="characters">登場人物:</label>
+            <input type="text" id="characters" placeholder="例: 勇敢な騎士、謎の魔法使い">
+        </div>
+        <div class="form-group">
+            <label for="setting">舞台:</label>
+            <input type="text" id="setting" placeholder="例: 荒廃した未来都市、魔法の森">
+        </div>
+        <div class="form-group">
+            <label for="keywords">キーワード (任意):</label>
+            <input type="text" id="keywords" placeholder="例: 古代の遺物、裏切り、希望">
+        </div>
+
+        <div class="api-config">
+            <label for="api-key">Google AI APIキー:</label>
+            <input type="password" id="api-key" placeholder="ここにAPIキーを入力してください">
+            <p class="note">APIキーは<a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a>で無料で取得できます。取得後、コピーして貼り付けてください。</p>
+        </div>
+        
+        <button id="generate-btn">プロットを生成</button>
+        
+        <div class="results">
+            <h2>生成されたプロット:</h2>
+            <textarea id="result-area" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
