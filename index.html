@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100個のWebアプリギャラリー</title>
+    <title>AIアプリ100本ノック</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>100個のWebアプリギャラリー</h1>
+        <h1>AIアプリ100本ノック</h1>
         <p>作成したWebアプリを検索・フィルタリングして見つけましょう。</p>
 
         <div class="search-filter-area">
             <input type="text" id="search-input" placeholder="アプリ名で検索...">
+            <select id="category-filter" class="filter-select">
+                <option value="">全てのカテゴリ</option>
+            </select>
             <div id="tag-filter-container"></div>
         </div>
 
